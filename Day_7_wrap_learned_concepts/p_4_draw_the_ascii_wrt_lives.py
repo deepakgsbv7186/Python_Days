@@ -1,14 +1,3 @@
-print('''
-    ________________ _     _____      _______________        ________   ___
-  ,' ________   ___// \    \  __`-.  /___   ___/\  __`-.   ,' ___/\ /  ,' /
- |  `-.__    | |   / . \   | |,',-'      | |    | |,',-'  | ,'___ | |,',-'
-  `-.___ `,  | |  / /_\ \  |  _ `-,      | |    |  _ `-,  |  ___/ |  _ `-,
-  ______\  \ | | / _____ \ | | `-. \_    | |    | | `-. \_| `.___ | | `-. \_
- /_________| /_|/_/     \_\|_\   /__/    /_\    |_\   /__/ `.____||_\   /__/
-''')
-good image
-
-
 #Step 4
 
 import random
@@ -116,5 +105,3 @@ while not end_of_game:
 
     #TODO-3: - print the ASCII art from 'stages' that corresponds to the current number of 'lives' the user has remaining.
     print(stages[lives])
-
-

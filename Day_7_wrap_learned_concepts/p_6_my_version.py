@@ -1,3 +1,60 @@
+# hangman ascii images for each stage
+stages = ['''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
+''']
 # select a word from given list randomly
 import random
 word_list = ["apple","pineapple","applepie"]
@@ -33,4 +90,4 @@ while not end_of_game:
     if '_' not in display:
         end_of_game = True
         print("You Win")
-    print(stages[lives])        
+    print(stages[lives])  

@@ -25,7 +25,6 @@ def cipher(input_text, shift_amount, given_direction):
         fount_at_index = alphabet.index(input_text[i])
         new_position = shift_amount + fount_at_index
         if new_position > (len_apha - 1):
-            
             your_text += alphabet[new_position % len_apha]
         else:
             your_text += alphabet[new_position]

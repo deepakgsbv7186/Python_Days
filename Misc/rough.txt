@@ -118,3 +118,17 @@ while not end_of_game:
     print(stages[lives])
 
 
+
+
+
+def decrypt(cipher_text, shift_backwards):
+    decrypt_text = ""
+    len_apha = len(alphabet)
+    if shift_backwards > len_apha:
+        shift_backwards %= len_apha
+    shift_backwards *= -1
+    for i in range(len(cipher_text)):
+        fount_at_index = alphabet.index(cipher_text[i])
+        new_poistion = shift_backwards + fount_at_index
+        decrypt_text += alphabet[new_poistion]
+    print(decrypt_text)  

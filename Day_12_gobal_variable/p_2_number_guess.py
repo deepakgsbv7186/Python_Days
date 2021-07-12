@@ -2,8 +2,8 @@
 from art import logo
 print(logo)
 # generate a random number range (1,100)
-import random
-computer_choose = random.randrange(1,100)
+from random import randint
+computer_choose = randint(1,100)
 print(computer_choose)
 def compare_with(choose,level):
     ''' take random generated number and difficulty level,

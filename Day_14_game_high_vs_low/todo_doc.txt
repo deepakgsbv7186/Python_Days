@@ -1,0 +1,4 @@
+-> take all the source data which required for game
+- "art.py" contains logo
+- "game_data.py" contains raw data in dictionary format to use
+

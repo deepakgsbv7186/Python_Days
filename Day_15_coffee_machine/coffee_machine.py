@@ -70,13 +70,11 @@ def is_incredients_sufficient(choice):
 
 # process money ( 1 paisa = ₹ 0.01, 5 paisa = ₹ 0.05, 10 paisa = ₹ 0.10, 25 paisa = ₹ 0.25)
 def collect_money():
-    _1paise = int(input("1 paise: "))
-    _5paise = int(input("5 paise: "))
-    _10paise = int(input("10 paise: "))
-    _25paise = int(input("25 paise: "))
-
-    user_money = (0.01 * _1paise) + (0.05 * _5paise) + (0.10 * _10paise) + (0.25 * _25paise)
-    return user_money
+    total = int(input("1 paise: ")) * 0.01 
+    total += int(input("5 paise: ")) * 0.05
+    total += int(input("10 paise: ")) * 0.1
+    total += int(input("25 paise: ")) * 0.25
+    return total
 
 # check for successful transactions
 def check_transaction(user_money,actual_price):
